@@ -1,6 +1,6 @@
 package com.global.commtech.test.anagramfinder;
 
-import com.global.commtech.test.anagramfinder.services.impl.BufferedAnagramGroupingService;
+import com.global.commtech.test.anagramfinder.services.AnagramGroupingService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -14,7 +14,7 @@ import java.util.Scanner;
 @RequiredArgsConstructor
 public class AnagramCommandLineRunner implements CommandLineRunner {
 
-    private final BufferedAnagramGroupingService anagramGroupingService;
+    private final AnagramGroupingService anagramGroupingService;
 
     @Override
     public void run(final String... args) throws Exception {
